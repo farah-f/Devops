@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: farah7/devops-app
+    container_name: devops-app
+    volumes:
+      - ./mydatabase.db:/usr/src/app/mydatabase.db
+    ports:
+      - "3001:3000"
